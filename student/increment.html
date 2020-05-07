@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<script>
+    $( document ).ready(function() {
+        $('input').change(function(e){
+    var c = $(this).is(":checked");
+    var i = parseInt($(this).attr('increment'));
+    var current_value = parseInt($('span#increment-me').text());
+    if (c){
+        $('span#increment-me').text(current_value+i);
+        // console.log('valie');
+        
+    }else{
+        $('span#increment-me').text(current_value-i);
+    }
+})
+
+
+
+   
+});
+
+    
+</script>
+<body>
+        <h1>    <input type="checkbox" class="cbox" id ="one" increment="6666"/>+1
+
+        </h1>
+        <br>
+        <h1> <input type="checkbox" class="cbox" id="two" increment="3435"/>+2
+        </h1>
+        <br>
+        <h1> <input type="checkbox" class="cbox" id="three" increment="334"/>+3
+        </h1>
+        <br>
+    <br>
+    <h1><span id="increment-me">0</span> </h1>
+    
+
+
+    
+    
+</body>
+
+</html>

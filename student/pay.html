@@ -1,0 +1,6 @@
+<form action="save-order-and-pay.php" method="POST">
+ <input type="hidden" name="email_prepared_for_paystack" value="<?php echo $email; ?>"> 
+ <input type="hidden" name="amount" value="<?php echo $amount_in_kobo; ?>"> 
+ <input type="hidden" name="cartid" value="<?php echo $cartid; ?>"> 
+ <button type="submit" name="pay_now" id="pay-now" title="Pay now">Pay now</button>
+</form>
