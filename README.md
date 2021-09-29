@@ -1,7 +1,7 @@
-This is an application for a school inwhich students can make payment online.
+This is an application for a school in which students can make payment online.
 The SQL file called project.sql
 Username for student login: steve
-Password for student ogin: steve
+Password for student login: steve
 
 Username for admin login: steve123
 Password for admin login: steve123
